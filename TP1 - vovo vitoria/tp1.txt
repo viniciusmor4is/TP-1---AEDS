@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int N;
+   scanf("%d",&N);
+    int J, Z, A, Cj, Cz;
+Cj=0;
+Cz=0;
+
+
+
+  int k=0, i;
+   while(N !=0) {  k++;
+
+    printf("\nTeste %i: \n", k);
+  
+   
+       for (i=0; i<N; i++) {
+    scanf("%d", &Z);
+    scanf("%d", &J);
+  
+
+   
+ 
+  
+   if ((J<0||Z<0)) printf("Vovo Vitoria nao tira dinheiro dos cofrinhos.\n");
+     else {   Cj= Cj + J;
+   Cz= Cz + Z;
+           A = Cz - Cj;
+         printf("%d \n", A);
+            ;     
+     };
+    
+  
+       }
+        Cz=0;
+        Cj=0;
+   
+
+    scanf("%i",&N);
+   }
+    return 0;
+}
